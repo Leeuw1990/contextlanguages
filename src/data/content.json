@@ -25,6 +25,7 @@
     },
     "header": {
       "menuItems": {
+        "home": "Home",
         "aboutUs": "Over ons",
         "allPlants": "Alle planten",
         "experience": "Persoonlijke ervaringen"
@@ -59,6 +60,7 @@
     },
     "header": {
       "menuItems": {
+        "home": "Página principal",
         "aboutUs": "Sobre nosotros",
         "allPlants": "todas las plantas",
         "experience": "Experiencias personales"

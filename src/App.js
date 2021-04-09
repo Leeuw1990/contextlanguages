@@ -11,29 +11,32 @@ import AllPlants from './pages/allPlants/AllPlants';
 import { LanguageContext } from "./context/LanguageContext";
 
 function App() {
-  const [language, toggleLanguage] = useState('nl');
-
-  const data = {
-    languageSwitch: setLanguage
-
-  }
-
-  function setLanguage() {
-
-    if(language === "nl") {
-      toggleLanguage("es");
-
-      if (language === "es") {
-        toggleLanguage("nl");
-      }
-    }
-  }
+  // const [language, toggleLanguage] = useState('es');
 
 
 
-console.log(data)
+  // function setNl() {
+  //
+  //   toggleLanguage('nl')
+  // }
+  //
+  // function setEs() {
+  //
+  //   toggleLanguage('es')
+  // }
+
+  // const data = {
+  //   activeLanguage: language,
+  //   setNlFunction: setNl,
+  //   setEsFunction: setEs
+  //
+  // }
+
+
+
+
   return (
-      <LanguageContext.Provider value={data}>
+
     <Router>
         <Header />
         <Switch>
@@ -48,7 +51,7 @@ console.log(data)
           </Route>
         </Switch>
     </Router>
-        </LanguageContext.Provider>
+
 
   );
 }
